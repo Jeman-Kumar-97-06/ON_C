@@ -35,7 +35,7 @@ int main() {
     int myNum = 5;
     float myFloat = 5.902352;
     char myLetter = 'd';
-    printf("%d\n",myNum);
+    printf("%d+10\n",myNum);//Prints '5+10' not 15
     printf("%c\n",myLetter);
     printf("%f\n",myFloat);
     return 0;
