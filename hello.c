@@ -14,3 +14,4 @@ int main() {
     printf("Hello, World!");
     return 0;
 }
+//Returning 0 means, shit is successful. If we return anything more than 0, it means fail.
