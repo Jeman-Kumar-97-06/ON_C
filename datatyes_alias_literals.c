@@ -33,10 +33,7 @@
 //             Provides Implementation.
 //Declaration : No Allocated Memory Yet.
 //              Stored in Symbol table 
-
-
 #include <stdio.h>
-
 int main() {
     unsigned int myPos = 10; //Can only be zero or positive
     int myNum = 5; //Can bet +ve or -ve
