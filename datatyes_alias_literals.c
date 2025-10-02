@@ -1,4 +1,5 @@
 //1 Byte = 8 Bits --> Combination of 8 0s and 1s
+
 //Basic Data Types : 
 //Integer : 2 - 4 bytes  --> Goes from -2147483648 to 2147483647
 //  Stores Whole Number
@@ -24,11 +25,16 @@
 //  'char' used for declaration.
 //  %c used as format specifier.
 
+//Xtra Types : 
+// Bool, Enumerated Type, Complex Type:
+
 //Definition vs Declaration : 
 //Definition : Allocates memory for variables.
 //             Provides Implementation.
 //Declaration : No Allocated Memory Yet.
 //              Stored in Symbol table 
+
+
 #include <stdio.h>
 
 int main() {
