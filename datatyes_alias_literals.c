@@ -1,6 +1,6 @@
 //1 Byte = 8 Bits --> Combination of 8 0s and 1s
 //Basic Data Types : 
-//Integer : 2 - 4 bytes
+//Integer : 2 - 4 bytes  --> Goes from -2147483648 to 2147483647
 //  Stores Whole Number
 //  'int' used for declaration
 //  %d or %i are the format specifiers.
@@ -32,13 +32,17 @@
 #include <stdio.h>
 
 int main() {
-    int myNum = 5;
+    unsigned int myPos = 10; //Can only be zero or positive
+    int myNum = 5; //Can bet +ve or -ve
     float myFloat = 5.902352;
     float myFloat2= 22.442e20;
     char myLetter = 'd';
     printf("%d+10\n",myNum);//Prints '5+10' not 15
     printf("%c\n",myLetter);
     printf("%f\n",myFloat2);
+    void *x;
+    x = &myNum;
+    printf("%d\n",*(int *)x);
     return 0;
 }
 
