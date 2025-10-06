@@ -21,7 +21,7 @@ void checkPrimeNumber(){
         }
     }
     if (flag == 1)
-        printf("%d is not a prime number",n);
+        printf("%d is not a prime number\n",n);
     else
-        printf("%d is a prime number",n);
+        printf("%d is a prime number\n",n);
 }
