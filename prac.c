@@ -1,12 +1,5 @@
 #include <stdio.h>
-void addition(int x,int y){
-    printf("%d\n",x+y);
-};
-
+static int x = 5;
 int main(){
-    int x,y;
-    printf("Enter 2 numbers : \n");
-    scanf("%d %d",&x,&y);
-    addition(x,y);
-    return 0;
+    printf("%d\n",x);
 }
