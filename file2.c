@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "file1.c"
 void display(){
     extern int x;
     x++;
