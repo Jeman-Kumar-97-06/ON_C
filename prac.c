@@ -1,6 +1,7 @@
 #include <stdio.h>
-extern int x;
+
 int main(){
+    extern int x;
     printf("F : %d\n",x);
 };
 
