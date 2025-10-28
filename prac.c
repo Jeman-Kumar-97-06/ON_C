@@ -1,5 +1,7 @@
 #include <stdio.h>
-static int x = 5;
+extern int x;
 int main(){
-    printf("%d\n",x);
-}
+    printf("F : %d\n",x);
+};
+
+int x = 100;
