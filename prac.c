@@ -1,9 +1,7 @@
 #include <stdio.h>
-int main() {
-    int x[4];
-    int i;
-    for (i=0;i<4;++i){
-        printf("&x[%d] = %p\n",i,&x[i]); //First element's address is x
-    };
-    printf("Address of array x: %p",x);  //Array's addres is also x
+int main(){
+    int x[10]= {1,2,3,4,5};
+    printf("%d",x[3]);
+    printf("%d",x[9]);
+    return 0;
 }
