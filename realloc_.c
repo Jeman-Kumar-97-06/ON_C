@@ -25,6 +25,9 @@ int main(){
     //Ask if user wants to change the size of the array, so that you can reallocate memory:
     int newNumber = 0;
     printf("Enter a new number : ");
+    scanf("%d",&newNumber);
+    //Create a temporary pointer first : 
+    char *temp = realloc(grades,newNumber*sizeof(char));
 
 
     //Print all the elements 
