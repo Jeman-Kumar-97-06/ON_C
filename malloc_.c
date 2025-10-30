@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 int main(){
     int number;
     printf("Enter the number grades you need find the average of :");
@@ -10,7 +11,10 @@ int main(){
     };// Used to avoid segmentation fault caused by accessing a null pointer.
     for (int i = 0; i < number; i++) {
         printf("Enter grade #%d : ",i+1);
-        scanf("%c",&grades[i]);
+        scanf(" %c",&grades[i]);
+    }
+    for (int i=0; i< number; i++) {
+        printf("\n%dth grade : %c\n",i+1,grades[i]);
     }
     free(grades);
     grades = NULL;// avoids dangling pointers.
