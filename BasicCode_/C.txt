@@ -1,0 +1,15 @@
+Language Tranlators:
+    Assembler:
+        * Converts Assembly Language to Machine Code/ Object Code.
+    Compiler:
+        * Converts the full code snippet to object code and creates an executable/ output file to run.
+        * Efficient.
+        * Since it converts the whole fucking thing, it's hard to find bugs
+    Interpreter:
+        * Executes each line and goes to the next line.
+        * Slow
+        * Easy to debug.
+
+Features Of C: 
+    * High Level Language
+    * 
