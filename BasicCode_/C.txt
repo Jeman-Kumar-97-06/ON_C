@@ -55,3 +55,10 @@ Constants in C :
     * #define PI 3.14
     * Two Types of Constants : Numeric (Integer Constants & Floating/Real Constants) and Character (Single char and String) Constants.
     * Integer Constants : 10, 4, 1, 0
+        * Decimal Constants : 0-9 * 05 not allowed --> 05 is octal constant. Decimal constants with digits more than 1 shouldn't start with 0
+        * Octal Constants : 0-7
+        * Hexadecimal Constants : 0-9, A-F --> starts with 0x or 0X
+    * Floating Constantts : 12.56, 0.5 ...
+    * Single Character Constants : 'a', 'x' ...
+    * String Constants : 'Jeman', "Jack"
+    * 
