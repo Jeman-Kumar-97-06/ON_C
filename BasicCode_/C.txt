@@ -12,4 +12,46 @@ Language Tranlators:
 
 Features Of C: 
     * High Level Language
-    * 
+    * Small Language with 32 keywords.
+    * Many languages depend on C.
+    * Machine Independent.
+    * Platform Dependent.
+    * Structured Language.
+    * Can use this code to access memory with pointers
+    * Quick and Efficient.
+    * Supports Dynamic Memory Allocation.
+    * Case Sensitive A != a
+
+Structure of C Program : 
+    * Comments start with '//'
+    * Multiline comments go between '/*' and '*/'
+    * Link Section: What shit to include ? 
+        Ex : #include <stdio.h> at the top --> includes stdio.h header file.
+             stdio.h --> has standard input/ output functions. 'printf' and 'scanf'.
+    * Definition Section: Includes all constants.
+        Ex : #define PI 3.14 --> This is called a Macro Definition.
+    * Global Variable Declaration Section : 
+        Ex : int a --> put outside of all functions in a snippet.
+    * Mandatory - Main function section. --> Only one main function for one snippet.
+        * Main functin has Declaration(Local Variables) and Executable part (Logic).
+        * Control always goes to main function. Program executes from there.
+    * Sub Program Section : 
+        * Optional User defined functions.
+        * These go after 'main' function.
+
+Execution process of C program: 
+    * Preprocessor Directives : --> any line of code that starts with '#'.
+    * When you run a c code snippet, the Preprocessor first takes care of the preprocessor directives.
+        Ex: #include <stdio.h> --> this will be replaced by all the shit inside stdio.h
+            #define PI 3.14 -----> all instances of PI will be replaced with 3.14
+    * Now a new file with '.i' extension will be created with the expanded source code.
+    * This file will be compiled and an '.asm' assmbly file will be created.
+    * This file will be converted to '.obj' file with the help of an assembler.
+    * Then, the Linker will link the '.obj' file with the system libraries. Now, a '.exe' or '.out' file will be created.
+    * Now when you run .exe or .out file, it will be loaded to the memory and then it will run.
+
+Constants in C : 
+    * You can't change these values.
+    * #define PI 3.14
+    * Two Types of Constants : Numeric (Integer Constants & Floating/Real Constants) and Character (Single char and String) Constants.
+    * Integer Constants : 10, 4, 1, 0
