@@ -59,6 +59,53 @@ Constants in C :
         * Octal Constants : 0-7
         * Hexadecimal Constants : 0-9, A-F --> starts with 0x or 0X
     * Floating Constantts : 12.56, 0.5 ...
-    * Single Character Constants : 'a', 'x' ...
-    * String Constants : 'Jeman', "Jack"
-    * 
+    * Single Character Constants : 'a', 'x' ... (No Double quotes like "a" or "x")
+    * String Constants : "Jeman", "Jack" --> No Single quotes like 'Jeman' or 'Jack'
+        * Ex: String constant : "Jenny". C will add a null Character constant ('\0') to the string to mark it's end.
+              Hence, it will be stored as "Jenny\0" and it's length will be 4+2 = 6
+    * Declaring constants in C : 
+        * void main(){
+            const int a = 10;
+        }
+        * #define PI 3.14 --> No space between '#' and 'define'.
+
+Variables in C : 
+    * int a = 10;
+    * 'a' is the symbolic alias of the memory location where 10 is stored.
+    * Declaration:
+        * int a; --> sets a memory location's alias as 'a'
+        * float a;
+        * char a;
+    * Initialization:
+        * a = 10;
+        * float b;
+        * char c;
+    * Variable names rules:
+        * Allows : A-Z, a-z, 0-9 and '_'
+        * Should start with alphabet or '_', not a digit.
+        * case sensitive. ca != Ca != cA
+        * U can't use reserved keywords.
+        * No whitespace or special chars like #, @, $, !, %
+        * Length <= 31
+
+Identifiers and Keywords : 
+    * 32 keywords.
+    * Identifiers = Variable names
+
+Data Types in C: 
+    * Used to specify the type of data we need to save in memory.
+    * Data types help reverving adequate amount of memory to the variable depending on the type.
+    * Primary Data Types:
+        * int   
+        * float
+        * char
+        * double
+        * void
+    * Derived Data Types:
+        * Array
+        * Structure
+        * Union
+        * Pointers
+    * User defined Data Types:
+        * Typedef
+        * Enum
