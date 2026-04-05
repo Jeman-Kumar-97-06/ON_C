@@ -46,7 +46,7 @@ Structure of C Program :
         Ex : #include <stdio.h> at the top --> includes stdio.h header file.
              stdio.h --> has standard input/ output functions. 'printf' and 'scanf'.
     * Definition Section: Includes all constants.
-        Ex : #define PI 3.14 --> This is called a Macro Definition.
+        Ex : #define PI 3.14 --> This is called a MACRO Definition.
     * Global Variable Declaration Section : 
         Ex : int a --> put outside of all functions in a snippet.
     * Mandatory - Main function section. --> Only one main function for one snippet.
@@ -66,17 +66,16 @@ Execution process of C program:
     * This file will be converted to '.obj' file with the help of an assembler.
     * Then, the Linker will link the '.obj' file with the system libraries. Now, a '.exe' or '.out' file will be created.
     * Now when you run .exe or .out file, it will be loaded to the memory and then it will run. This process is called 'Loading'.
-    
 
 Constants in C : 
     * You can't change these values.
     * #define PI 3.14
     * Two Types of Constants : Numeric (Integer Constants & Floating/Real Constants) and Character (Single char and String) Constants.
     * Integer Constants : 10, 4, 1, 0
-        * Decimal Constants : 0-9 * 05 not allowed --> 05 is octal constant. Decimal constants with digits more than 1 shouldn't start with 0
+        * Decimal Constants : 0-9 | * 05 not allowed --> 05 is octal constant. Decimal constants with digits more than 1 shouldn't start with 0
         * Octal Constants : 0-7
         * Hexadecimal Constants : 0-9, A-F --> starts with 0x or 0X
-    * Floating Constantts : 12.56, 0.5 ...
+    * Floating Constants : 12.56, 0.5 ...
     * Single Character Constants : 'a', 'x' ... (No Double quotes like "a" or "x")
     * String Constants : "Jeman", "Jack" --> No Single quotes like 'Jeman' or 'Jack'
         * Ex: String constant : "Jenny". C will add a null Character constant ('\0') to the string to mark it's end.
@@ -96,8 +95,8 @@ Variables in C :
         * char a;
     * Initialization:
         * a = 10;
-        * float b;
-        * char c;
+        * float b = 10.5;
+        * char c = 3.14;
     * Variable names rules:
         * Allows : A-Z, a-z, 0-9 and '_'
         * Should start with alphabet or '_', not a digit.
@@ -171,3 +170,43 @@ Data Types in C:
         max number represented with 15 bits is : 32767
         min number represented with 15 bits is 1000000000000000 : -32768
     
+* Hello World Program: 
+    * REFER _1.c :
+        #include <stdio.h>
+        void main(){
+            printf("Hello World\n");
+        }
+
+    * Compiling the program: 
+        $ gcc hello.c
+    * Compiling with the above command create ./a.out file in linux.
+    * Compiling the program by specifing what the '.out' executable's name should be:
+        $ gcc hello.c -o prog --> this will create 'prog.out' after compilation.
+    * 'void main()' means, the function 'main()' doesn't return anything.
+    * 'int main()' means, the func returns an int:
+        #include <stdio.h> ---> PREPROCESSOR DIRECTIVE.
+        int main(void){ ------> 'VOID' MEANS THE FUNC TAKES NO ARGS.
+            printf("Hello WOrld"); -> ';' IS MANDATORY AT THE END OF EACH FUCKING LINE.
+        }
+    * main() function contains the MAIN ROUTINE of the program.
+* Displaying Variables: REFER ./_5.c and ./_6.c: 
+    #include <stdio.h>
+    int main(void){
+        int sum; -------> DECLARING THE VARIABLE 'sum' AS 'INTEGER'.
+        sum = 50 + 25;--> INTIALIZING 'sum' AS THE SUM OF 50 AND 25
+        printf("The Sum of 50 and 25 is %i\n", sum); --> '%i' IS THE FORMAT SPECIFIER FOR AN INTEGER.
+        return 0;
+    }
+
+    #include <stdio.h>
+    int main(void){
+        int val1, val2, sum;
+
+        val1 = 50;
+        val2 = 25;
+        sum  = val1 + val2;
+
+        printf("The sum of %i and %i is %i\n",val1, val2, sum);
+        return 0;
+    }
+* 
