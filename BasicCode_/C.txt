@@ -96,28 +96,33 @@ Data Types in C:
     * Used to specify the type of data we need to save in memory.
     * Data types help reverving adequate amount of memory to the variable depending on the type.
     * Primary Data Types:
-        * int: 
-            short int : 
+        * int: %d or %i | unsigned int : %u | unsigned long int : %lu
+            short int : %hd
                 size: generally 2 bytes.
-                signed range : -32768 to 32767
-                unsigned range : 0 to 65535
-            long int:
+                signed range : -32768 to 32767 
+                unsigned range : 0 to 65535    
+            long int: %ld or %li
                 size : 4-8bytes 32-64 bits
                 signed range: -2,147,483,648 to 2,147,483,647
                               8byte range : -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807
                 unsingned range :  0 to 4,294,967,295
-        * float:
+        * float: %f
             size: 4 bytes.
             Precision : 6 to 7 digits.
             Range: 1.2x10^-38 to 3.4x10^38
 
-        * char:
+        * double: %lf
             * Used to store high precision floating numbers.
-            * Size: 8bytes.
+            * Size: 8 bytes.
             * Precision : 15 to 17 digits.
             * Range: 1.7E-308 to 1.7E+308
-        * double
+        * char : %c
+            * Typically 1byte (8bits).
+            * signed and unsigned chars exist.
+            * Signed Char : -128 to 127
+            * unsigned char : 0 to 255
         * void
+            * used to declare a function that doesn't return anything.
     * Derived Data Types:
         * Array
         * Structure
@@ -126,3 +131,25 @@ Data Types in C:
     * User defined Data Types:
         * Typedef
         * Enum
+
+* Integers: 16bit:
+    * Size: 2bytes.
+    * Range : -32768 to 32767
+    * Unsigned Range: 0 to 65535
+    * Why that range: 
+       *Unsigned Int : 
+        2 bytes = 8 bits x 2
+        Minimum number represented by 2 bytes: 
+            | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0| 0 | 0 | 0 | 0 |
+            = 0
+        Maximum number represented by 2 bytes : 
+            | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 |
+            = 65535
+
+       *Signed Int : 
+        2 bytes = 8 bits x 2
+        First bit is used for + or - : 0 for + | 1 for -
+        So, the remaining 15 bits are used for representing numbers:
+        max number represented with 15 bits is : 32767
+        min number represented with 15 bits is 1000000000000000 : -32768
+    
