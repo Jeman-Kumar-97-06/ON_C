@@ -1,3 +1,20 @@
+Intro:
+    * C was created by Dennis Ritchie at AT&T Bell Labs in early 1970s.
+    * IN ealy 1980s, ANSI (American National Standards Institute) standardized C.
+    * C is a high level language but allows user to work close to hardware.
+    * The basic operations of a computer system that's unique to that system is what you call a computer system's
+    Instruction Set.
+    * To solve a problem using a computer, you must express the solution to the problem in terms of the instructions
+    of the particular computer.
+    * A computer program is just a set of instructions used to solve a specific problem.
+    * The step-by-step approach used to solve the problem is called an Algo.
+    * When Computer was first developed the only way to program them was to use binary numbers that corresponds
+    directly to machine instructions and locations in memory.
+    * So, assembly language was developed. An ASSEMBLER was used to convert the code to machine instructions.
+    * Assembly language maintained a one-to-one correspondence to the machine instruction set. 
+    * Programs written with assembly was machine dependent.
+    * Then came C. It was machine independent.(But the executable was Platform dependent).
+
 Language Tranlators:
     Assembler:
         * Converts Assembly Language to Machine Code/ Object Code.
@@ -48,7 +65,8 @@ Execution process of C program:
     * This file will be compiled and an '.asm' assmbly file will be created.
     * This file will be converted to '.obj' file with the help of an assembler.
     * Then, the Linker will link the '.obj' file with the system libraries. Now, a '.exe' or '.out' file will be created.
-    * Now when you run .exe or .out file, it will be loaded to the memory and then it will run.
+    * Now when you run .exe or .out file, it will be loaded to the memory and then it will run. This process is called 'Loading'.
+    
 
 Constants in C : 
     * You can't change these values.
