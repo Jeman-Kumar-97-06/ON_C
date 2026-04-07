@@ -362,5 +362,16 @@ Data Types in C:
 
 * For _Bool and <stdbool.h> : REFER _17.c and _17b.C
 
-*  
-            
+* Arrays: REFER _18.c : 
+    * Declaring an array:
+        int grades[100]; --> ARRAY OF NAME 'GRADES' WHERE YOU CAN STORE 100 INTEGERS.
+        float avgs[200]; --> ARRAY OF NAME 'AVGS' WHERE YOU CAN STORE 200 FLOATS.
+    * Manipulating:
+        int values[10];
+
+        values[0] = 197;
+        values[2] = 100;
+        values[9] = values[5]/10;
+        --values[2]; -------> just like "values[2] -= 1" in python3.
+        printf(values[2]) --> 99
+
