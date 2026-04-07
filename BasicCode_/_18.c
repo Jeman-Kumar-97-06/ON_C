@@ -14,5 +14,6 @@ int main(void){
     for (index = 0; index < 10; ++index){
         printf("values[%i] = %i\n",index,values[index]);
     }
+    
     return 0;
 }
