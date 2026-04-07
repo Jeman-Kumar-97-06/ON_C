@@ -3,7 +3,7 @@
 
 int main(void) {
     int p,d;
-    bool isPrime;
+    bool isPrime;//'bool' comes from 'stdboo.h'
 
     for (p=2; p<= 50; ++p){
         isPrime = true;

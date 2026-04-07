@@ -242,8 +242,10 @@ Data Types in C:
 * Operators : 
     * Unary Operators: Operators that operate on 1 operand.
         * ex: printf("%i",-a); --> MINUS OPERATED ON A SINGLE OPERAND GIVESS ITS NEGATION.
-
     * Binary Operators : Operators that operate on 2 operands. 
+    * Ternary Operators : Operators that operate on 3 operands.
+        * s = (x<0) ? -1 : x*x;
+        * maxVal = (a>b) ? a : b;
     * Arithmetic : + : Add, - : Sub, * : Multiply, / : Divide, % : Modulus -->  REFER ./_8.c
     * Assignment : =, +=, -=, *=, /=, %=
     * Comparision : ==, != , >, <, >=, <=
@@ -356,10 +358,9 @@ Data Types in C:
         return 0;
     }
 
-* The Switch Statement: REFER _16.c :
-    #include <stdio.h>
-    int main(void){
+* The Switch Statement: REFER _16.c
 
-        printf(")
-    }
+* For _Bool and <stdbool.h> : REFER _17.c and _17b.C
+
+*  
             
