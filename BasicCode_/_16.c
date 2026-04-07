@@ -3,7 +3,7 @@
 int main(void){
     int a,b;
     char op;
-    printf("Give your grade:\n");
+    printf("Give an algebraic expression:\n");
     scanf("%i%c%i",&a,&op,&b);
     switch (op){
         case '+':
