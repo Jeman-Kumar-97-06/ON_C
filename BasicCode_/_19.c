@@ -20,7 +20,7 @@ int main(void){
     }
 
     printf("\n\nRating   Number of Responses\n");
-    printf("-----------  -----------------------");
+    printf("-----------  -----------------------\n");
 
     for (i=1; i<=10; ++i){
         printf("%4i%14i\n",i,ratingCounters[i-1]);
