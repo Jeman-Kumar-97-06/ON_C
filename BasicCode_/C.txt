@@ -322,7 +322,6 @@ Data Types in C:
 
 * IF , IF-ELSE,  ELSE IF : 
     #include <stdio.h>
-
     int main(void){
         int age;
         printf("Type your age:\n");
@@ -337,5 +336,30 @@ Data Types in C:
             printf("You are a minor\n");
         }
         return 0;
+    }
+
+* Compound Relational Tests:
+    #include <stdio.h>
+    int main(void){
+        int grade;
+        printf("Type you grade:\n");
+        scanf("%i",&grade);
+        if (grade > 70 && grade <= 79){
+            printf("You are average");
+        }
+        else if (grade > 80 && grade <= 89) {
+            printf("You are above average");
+        }
+        else if (grade > 90 && grade <= 99) {
+            printf("You are excellent");
+        }
+        return 0;
+    }
+
+* The Switch Statement: REFER _16.c :
+    #include <stdio.h>
+    int main(void){
+
+        printf(")
     }
             
