@@ -298,7 +298,7 @@ Data Types in C:
     * Ex:
         Program to reverse the digits of a number:
             #include <stdio.h>
-            
+
             int main(){
                 int num, right_digit;
 
@@ -316,3 +316,26 @@ Data Types in C:
 
                 return 0;
             }
+* BREAK and CONTINUE statement:
+    * Break    : Used to immediately exit from the loop.
+    * Continue : Go to the next iteration.
+
+* IF , IF-ELSE,  ELSE IF : 
+    #include <stdio.h>
+
+    int main(void){
+        int age;
+        printf("Type your age:\n");
+        scanf("%i",&age);
+        if (age>18){
+            printf("You are a major\n");
+        }
+        else if (age == 18){
+            printf("You are just a major\n");
+        }
+        else {
+            printf("You are a minor\n");
+        }
+        return 0;
+    }
+            
