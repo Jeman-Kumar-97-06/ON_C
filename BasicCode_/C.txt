@@ -386,4 +386,71 @@ Data Types in C:
     * Intializing in custom order:
         int x[20] = {[2] = 500, [1] = 300, [0] = 200};
 
-    
+    * Intializing int arrays : 
+        #include <stdio.h>
+        int main(void){
+            int array_values[10] = {0,1,4,9,16};
+            int i;
+
+            for (i=5; i<10; ++i){
+                arrays_values[i] = i*i;
+            }
+
+            for (i=0; i<10; ++i){
+                printf("Array_values[%i] = %i\n", i, array_values[i]);
+            }
+
+            return 0;
+        }
+
+    * Intializing char arrays : 
+        #include <stdio.h>
+        int main(void){
+            char word[] = {"H", "e", "l", "l", "o", "!"};
+            int i;
+
+            for (i=0; i<6; ++i) {
+                printf("%c", word[i]);
+            }
+
+            printf("\n");
+
+            return 0;
+        }
+    * Multidimensional Arrays : 
+        int M[4][5] = {
+            {10, 5, -3, 17, 82},
+            {9, 0, 0, 8, -7},
+            {32, 20, 1, 0, 14},
+            {0, 0, 8, 7, 6}         
+        };
+
+        * You can also intialize only a few values : 
+        int M[4][5] = {
+            {10,  5, -3}, --> remaining 2 values will be set to zero.
+            { 9,  0,  0},
+            {32, 20,  1},
+            { 0,  0,  8}
+        };
+
+        * Intializing with custom order:
+        int m[4][3] = {[0][0]=1, [1][1]=5, [2][2]=9};
+
+        * Arrays with Variable size : 
+            #include <stdio.h>
+            int main(void){
+                int i, numFibs;
+
+                printf("How many Fibonacci numbers do you want (between 1 and 75)?");
+                scanf("%i", &numFibs);
+
+                if (numFibs < 1 || numFibs > 75){
+                    printf("Bad number, sorry!\n");
+                    return 1;
+                }
+
+                unsigned long long int Fibonacci[numFibs];
+
+                Fibonacci[0] = 0;
+                Fibonacci[1] = 1;
+            }
