@@ -362,7 +362,7 @@ Data Types in C:
 
 * For _Bool and <stdbool.h> : REFER _17.c and _17b.C
 
-* Arrays: REFER _18.c : 
+* Arrays: REFER _18.c and _19.c : 
     * Declaring an array:
         int grades[100]; --> ARRAY OF NAME 'GRADES' WHERE YOU CAN STORE 100 INTEGERS.
         float avgs[200]; --> ARRAY OF NAME 'AVGS' WHERE YOU CAN STORE 200 FLOATS.
@@ -375,3 +375,15 @@ Data Types in C:
         --values[2]; -------> just like "values[2] -= 1" in python3.
         printf(values[2]) --> 99
 
+* Initializing Arrays:
+    * Declaring Arrays with an intial value:
+        int counters[5] = {0,0,0,0,0};
+
+    * Intializing only a few values in an array: REFER _20.c :
+        float sample_data[50] = {100.0, 200.0, 300.0};
+        * all the remaining values will be set to '0' or '0.0'
+
+    * Intializing in custom order:
+        int x[20] = {[2] = 500, [1] = 300, [0] = 200};
+
+    
