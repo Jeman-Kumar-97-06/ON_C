@@ -13,6 +13,11 @@ int main(void){
     int i;
     void multiplyBy2(float array[], int n);
 
+    //No 'return' statement after Line6 cuz the code just modifies the original 'floatVals'.
+    //Reason : 
+        //When function is called as func(x,y) --> the values of x and y are copied to the formal parameters in definition.
+        //When function is called with array --> The pointer of the whole array  is copied. So the ops is done on the OG
+                                                //values stored in that location.
     multiplyBy2(floatVals, 4);
 
     for (i=0; i<4; ++i){
