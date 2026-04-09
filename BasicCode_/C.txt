@@ -476,3 +476,6 @@ Data Types in C:
             printMessage();
             return 0;
         }
+
+    * Passing Arrays to Functions : REFER _26.c : 
+        
