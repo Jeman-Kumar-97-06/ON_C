@@ -464,5 +464,15 @@ Data Types in C:
                 return 0;
             }
 
-* Functions : 
-    * 
+* Functions : REFER _21.c , _22.c, _23.c, _24.c: 
+    * Writing Functions with C : 
+        #include <stdio.h>
+
+        void printMessage(void){
+            printf("Programming is fun.\n");
+        }
+
+        int main(void){
+            printMessage();
+            return 0;
+        }
