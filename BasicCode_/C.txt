@@ -477,5 +477,7 @@ Data Types in C:
             return 0;
         }
 
-    * Passing Arrays to Functions : REFER _26.c : 
+    * Passing Arrays to Functions : REFER _26.c 
+    * When you change the values of arguments of a function, the original values won't change. But it the argument is an array,
+    the elements of the original array will change. REFER _27.c
         

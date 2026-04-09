@@ -14,7 +14,7 @@ int minimum (int values[10]){
 
 int main(void){
     int scores[10], i, minScore;
-    int minimum(int values[10]);
+    int minimum(int values[10]); //--> Declared again 
 
     printf("Enter 10 scores\n");
 
