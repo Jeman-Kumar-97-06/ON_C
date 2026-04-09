@@ -1,5 +1,5 @@
 //Calculating the absolute value : 
-
+//This returns a 'float' value : 
 #include <stdio.h>
 
 float absoluteValue(float x){
