@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 void gcd(int u , int v){
-    int temp;
+    int temp; //---------------------------> LOCAL VARIABLE
     printf("The gcd of %i and %i is",u,v);
     while (v!=0){
         temp = u%v;
