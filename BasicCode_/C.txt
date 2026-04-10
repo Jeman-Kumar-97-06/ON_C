@@ -50,7 +50,7 @@ Structure of C Program :
     * Global Variable Declaration Section : 
         Ex : int a --> put outside of all functions in a snippet.
     * Mandatory - Main function section. --> Only one main function for one snippet.
-        * Main functin has Declaration(Local Variables) and Executable part (Logic).
+        * Main function has Declaration(Local Variables) and Executable part (Logic).
         * Control always goes to main function. Program executes from there.
     * Sub Program Section : 
         * Optional User defined functions.
@@ -112,7 +112,7 @@ Identifiers and Keywords :
 
 Data Types in C: 
     * Used to specify the type of data we need to save in memory.
-    * Data types help reverving adequate amount of memory to the variable depending on the type.
+    * Data types help reserving adequate amount of memory to the variable depending on the type.
     * Primary Data Types:
         * int: %d or %i | unsigned int : %u | unsigned long int : %lu
             short int : %hd

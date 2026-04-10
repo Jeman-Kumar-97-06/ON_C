@@ -1,10 +1,6 @@
 #include <stdio.h>
 
-int a = 32;
-
 int main(void){
-    printf("Hello WOrld!\n");
-    printf("%i\n",a);
-    printf("%i\n",050);
+    printf("%.2e\n",300000000000000000000.0);
     return 0;
 }
