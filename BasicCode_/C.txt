@@ -55,6 +55,7 @@ Structure of C Program :
     * Sub Program Section : 
         * Optional User defined functions.
         * These go after 'main' function.
+        * But the declaration always comes first.
 
 Execution process of C program: 
     * Preprocessor Directives : --> any line of code that starts with '#'.
